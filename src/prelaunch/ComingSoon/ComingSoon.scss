@@ -1,0 +1,13 @@
+@use "../../partials/variables" as *;
+@use "../../partials/mixins" as *;
+
+.coming-soon {
+    text-align: center;
+    @include shadow;
+    border: $lm-navbar 3px solid;
+    border-radius: 1rem;
+    -webkit-border-radius: 1rem;
+    -moz-border-radius: 1rem;
+    -ms-border-radius: 1rem;
+    -o-border-radius: 1rem;
+}
