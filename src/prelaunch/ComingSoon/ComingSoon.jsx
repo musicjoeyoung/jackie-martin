@@ -5,7 +5,7 @@ import "./ComingSoon.scss"
 const ComingSoon = () => {
     return (
         <div className="coming-soon">
-            <h1>Coming Soon!</h1>
+            <h1 className="coming-soon__h1">Coming Soon!</h1>
             <p>Jackie's website is under construction. Stay tuned!</p>
             <CountdownTimer />
         </div>
