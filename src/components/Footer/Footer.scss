@@ -1,6 +1,12 @@
+@use "../../partials/variables" as *;
+
 .footer {
-    padding-top: 40px;
-    padding-bottom: 40px;
-    margin-top: 40px;
+    position: absolute;
+    background-color: #9e2b25;
     border-top: 1px solid #eee;
+    padding: 2rem 0rem;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    text-align: center;
 }

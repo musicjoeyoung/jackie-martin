@@ -18,8 +18,8 @@ const Home = () => {
 
     return (
         <main className="main-container">
-            <h1>Jackie Martin</h1>
-            <TextTransition springConfig={presets.wobbly}>{TEXTS[index % TEXTS.length]}</TextTransition>
+            <h1 className="main-container__h1">Jackie Martin</h1>
+            <TextTransition springConfig={presets.wobbly} className="main-container__text-transition">{TEXTS[index % TEXTS.length]}</TextTransition>
         </main>
     )
 }
