@@ -19,7 +19,7 @@ const Navbar = ({ setDarkMode, darkMode }) => {
                     </div>
                 </Link>
                 <Link className="navbar__link" to="/about">About</Link>
-                <Link className="navbar__link" to={resume} target="_blank" download>Resume</Link>
+                <Link className="navbar__link--resume" to={resume} target="_blank" download>Resume</Link>
                 <Link className="navbar__link" to="/contact">Contact</Link>
                 {/*     <a className="navbar__toggle-a" onClick={() => setDarkMode(prevDarkMode => !prevDarkMode)}>
                     <img className="navbar__toggle-img" src={toggleSvg} alt="light/dark toggle" />

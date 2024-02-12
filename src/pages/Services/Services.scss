@@ -1,0 +1,32 @@
+@use "../../partials/mixins" as *;
+
+.services-container {
+    margin: 5rem 2rem 0rem 2rem;
+}
+
+.audio-container {
+    @include shadow;
+    padding: 0.5rem;
+    border-radius: 1rem;
+    margin-bottom: 2rem;
+}
+.radio-container {
+    //display: flex;
+    justify-content: space-between;
+    margin: 2rem 0rem;
+}
+
+.featured {
+    border: solid 2px gold;
+    padding: 1rem;
+    width: 90%;
+    margin: 1rem auto;
+    border-radius: 1rem;
+    text-align: center;
+
+    &__title {
+        background-color: gold;
+        width: 18rem;
+        margin: 1rem auto;
+    }
+}

@@ -5,7 +5,9 @@ import Script from "../Services/Script"
 
 const Services = () => {
     return (
-        <div>Services
+        <div className="services-container">
+            <h2>Services</h2>
+            <p>On this page you'll find...</p>
             <Audio />
             <Video />
             <Script />

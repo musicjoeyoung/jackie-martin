@@ -6,6 +6,7 @@ html {
   font-family: "Urbanist", sans-serif;
   background-color: $lm-background;
   color: $lm-text;
+  position: relative;
 }
 #root {
   max-width: 1280px;
