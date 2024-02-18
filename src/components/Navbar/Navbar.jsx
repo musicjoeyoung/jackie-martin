@@ -6,6 +6,13 @@ const Navbar = ({ setDarkMode, darkMode }) => {
     const toggleLm = 'https://res.cloudinary.com/dfbuwtl5q/image/upload/v1704223838/toggle-lm_agastf.svg'
     const toggleDm = 'https://res.cloudinary.com/dfbuwtl5q/image/upload/v1704223837/toggle-dm_ekdax7.svg'
     const toggleSvg = darkMode ? toggleDm : toggleLm;
+
+    const scrollToSection = (sectionId) => {
+        const section = document.getElementById(sectionId);
+        if (section) {
+            section.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }
+    };
     return (
         <>
             <nav className={`navbar ${darkMode ? 'dark dark--darkNavbar' : ''}`}>
@@ -13,9 +20,9 @@ const Navbar = ({ setDarkMode, darkMode }) => {
                 <Link className="dropdown" to="/services">Services <span className="dropdown__triangle">▼</span>
 
                     <div className="dropdown-content">
-                        <Link className="navbar__link" to="/services#audioProduction">Audio Production</Link>
-                        <Link className="navbar__link" to="/services#videoProduction">Video Production</Link>
-                        <Link className="navbar__link" to="/services#scriptWriting">Script Writing</Link>
+                        <Link className="navbar__link" to="/services" onClick={() => scrollToSection('audio')} >Audio Production</Link>
+                        <Link className="navbar__link" to="/services" onClick={() => scrollToSection('video')} >Video Production</Link>
+                        <Link className="navbar__link" to="/services" onClick={() => scrollToSection('script')}>Script Writing</Link>
                     </div>
                 </Link>
                 <Link className="navbar__link" to="/about">About</Link>
@@ -43,9 +50,9 @@ const Navbar = ({ setDarkMode, darkMode }) => {
                         <li className="dropdown dropdown--mobile">
                             <Link className="mobile-ul__a dropbtn" to="/services">Services <span className="dropdown__triangle">▼</span></Link>
                             <div className="dropdown-content">
-                                <Link className="mobile-ul__a" to="/services#audioProduction">Audio Production</Link>
-                                <Link className="mobile-ul__a" to="/services#videoProduction">Video Production</Link>
-                                <Link className="mobile-ul__a" to="/services#scriptWriting">Script Writing</Link>
+                                <Link className="mobile-ul__a" to="/services" onClick={() => scrollToSection('audio')} >Audio Production</Link>
+                                <Link className="mobile-ul__a" to="/services" onClick={() => scrollToSection('video')} >Video Production</Link>
+                                <Link className="mobile-ul__a" to="/services" onClick={() => scrollToSection('script')}>Script Writing</Link>
                             </div>
                         </li>
                         <li className="mobile-ul__li">

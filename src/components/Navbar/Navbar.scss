@@ -62,7 +62,6 @@
 
     &--mobile {
         float: none;
-        background-color: #f5f5f5;
         padding: 10px 0;
     }
 
@@ -101,7 +100,7 @@
 }
 
 .dropdown-content a:hover {
-    background-color: red;
+    background-color: $lm-background2;
 }
 
 .dropdown:hover .dropdown-content {
@@ -187,12 +186,12 @@
 
 .mobile-ul {
     position: absolute;
-    width: 180px;
+    width: 110px;
     box-shadow: 0 0 10px #85888c;
     margin: -50px 0 0 -50px;
     padding: 50px;
     padding-top: 125px;
-    background-color: #f5f6fa;
+    background-color: $lm-background;
     -webkit-font-smoothing: antialiased;
     transform-origin: 0% 0%;
     transform: translate(-100%, 0);
@@ -205,7 +204,6 @@
         /* background: #f5f5f5; */
     }
     &__a {
-        background: #f5f5f5;
         text-decoration: none;
         /* color: $lm-navbar !important; */
     }
