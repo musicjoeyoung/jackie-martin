@@ -1,5 +1,12 @@
 import './App.scss'
-import ComingSoon from './prelaunch/ComingSoon/ComingSoon'
+//import ComingSoon from './prelaunch/ComingSoon/ComingSoon'
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import Home from './pages/Home/Home';
+import About from './pages/About/About';
+import Services from './pages/Services/Services';
+import Contact from './pages/Contact/Contact';
+import Navbar from './components/Navbar/Navbar';
+import Footer from './components/Footer/Footer';
 
 console.log(
   '%c🌐 Want a stunning website? 🚀 %cReach out to%c Joe Young %cjoseph.m.young2@gmail.com',
@@ -9,12 +16,21 @@ console.log(
   'color: #e67e22; font-size: 18px; font-weight: bold;'
 );
 function App() {
-
-
-
   return (
     <>
-      <ComingSoon />
+      {/* <ComingSoon /> */}
+
+      <BrowserRouter>
+        <Navbar />
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/services" element={<Services />} />
+          <Route path="/contact" element={<Contact />} />
+
+        </Routes>
+        <Footer />
+      </BrowserRouter>
     </>
   )
 }
