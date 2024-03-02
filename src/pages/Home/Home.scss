@@ -13,9 +13,13 @@
     -ms-border-radius: 14px;
     -o-border-radius: 14px;
     padding: 0rem 2rem;
-    height: 12rem;
+    height: 14rem;
     @include text-shadow;
     @include shadow;
+
+    @include mobile-landscape {
+        height: 11rem;
+    }
 
     /*   &_h1 {
     } */
