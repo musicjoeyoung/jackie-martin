@@ -17,12 +17,7 @@
     @include text-shadow;
     @include shadow;
 
-    @include mobile-landscape {
-        height: 11rem;
-    }
-
-    /*   &_h1 {
-    } */
+    margin: 6rem 0 10rem 0;
 
     &__text-transition {
         font-size: 1.5rem;
